@@ -19,10 +19,10 @@ module.exports = function longestConsecutiveLength(array) {
       longSeqAtThisMom = 1;
     };
   };
-
+  
   function fn(a, b) {
     return a - b;
   }
-
+  
   return Sequence;
 }
