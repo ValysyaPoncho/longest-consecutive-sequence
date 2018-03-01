@@ -7,7 +7,7 @@ module.exports = function longestConsecutiveLength(array) {
   let longSeqAtThisMom = 1;
   let Sequence = 1;
 
-  for(let i = 0; i < sortedArray.length; i++) {
+  for(let i = 0, arrLen = sortedArray.length; i < arrLen; i++) {
     if (sortedArray[i] === sortedArray[i + 1] - 1) {
       longSeqAtThisMom++;
     } else if (sortedArray[i] === sortedArray[i + 1]) {
@@ -19,7 +19,7 @@ module.exports = function longestConsecutiveLength(array) {
       longSeqAtThisMom = 1;
     };
   };
-  
+
   function fn(a, b) {
     return a - b;
   }
